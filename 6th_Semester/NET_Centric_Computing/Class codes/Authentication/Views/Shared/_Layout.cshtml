@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Authentication</title>
+  </head>
+  <body>
+    <header>
+      <nav style="display: flex; justify-content: space-between;">
+          <ul>
+            <li>
+              <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li>
+              <a asp-area="" asp-controller="Home" asp-action="Privacy"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a asp-area="" asp-controller="Home" asp-action="DashBoard"
+                >Dashboard</a
+              >
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <main role="main">
+      @RenderBody()
+    </main>
+  </body>
+</html>
